@@ -1,0 +1,17 @@
+@name = Alice
+@host = localhost:3000
+
+### test greet
+GET http://{{host}}/greet/{{name}}
+
+### test server
+GET http://{{host}}
+
+### test post
+POST http://{{host}}/post
+Content-Type: application/json
+
+{
+    "name": "Alice",
+    "age": 18
+}
